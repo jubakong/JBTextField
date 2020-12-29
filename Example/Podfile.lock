@@ -1,0 +1,16 @@
+PODS:
+  - JBTextField (0.1.0)
+
+DEPENDENCIES:
+  - JBTextField (from `../`)
+
+EXTERNAL SOURCES:
+  JBTextField:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JBTextField: c5eebcf4c79089a046b8c796e27a2938c4b13375
+
+PODFILE CHECKSUM: a40bdc46d4daccdfa712666b325f78f37d1d8b80
+
+COCOAPODS: 1.10.0

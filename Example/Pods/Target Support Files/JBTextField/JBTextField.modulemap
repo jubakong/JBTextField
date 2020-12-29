@@ -1,0 +1,6 @@
+framework module JBTextField {
+  umbrella header "JBTextField-umbrella.h"
+
+  export *
+  module * { export * }
+}

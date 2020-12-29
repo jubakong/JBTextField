@@ -1,0 +1,6 @@
+framework module Pods_JBTextField_Example {
+  umbrella header "Pods-JBTextField_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
