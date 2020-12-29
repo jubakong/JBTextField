@@ -8,7 +8,7 @@
 import UIKit
 
 @IBDesignable
-class JBTextField: UITextField {
+open class JBTextField: UITextField {
   
   enum ValidStatus {
     case normal
@@ -18,13 +18,13 @@ class JBTextField: UITextField {
   
   
   // MARK: Properties
-  @IBInspectable var bottomBorderColor: UIColor = .black {
+  @IBInspectable open var bottomBorderColor: UIColor = .black {
     didSet {
       updateUI()
     }
   }
   
-  @IBInspectable var errorMessage: String? {
+  @IBInspectable open var errorMessage: String? {
     didSet {
       initializeErrorLabel()
     }
@@ -50,7 +50,7 @@ class JBTextField: UITextField {
     initTextField()
   }
   
-  required init?(coder: NSCoder) {
+  required public init?(coder: NSCoder) {
     super.init(coder: coder)
     initTextField()
   }
@@ -151,14 +151,14 @@ class JBTextField: UITextField {
     }
   }
   
-  override func textRect(forBounds bounds: CGRect) -> CGRect {
+  open override func textRect(forBounds bounds: CGRect) -> CGRect {
     let superRect = super.textRect(forBounds: bounds)
 
     return CGRect(x: 0, y: 0, width: superRect.size.width, height: superRect.size.height + bottomSetupView.frame.height + titleTextHeight )
   }
   
   
-  override func editingRect(forBounds bounds: CGRect) -> CGRect {
+  open override func editingRect(forBounds bounds: CGRect) -> CGRect {
     let superRect = super.editingRect(forBounds: bounds)
 
 
@@ -166,7 +166,7 @@ class JBTextField: UITextField {
   }
   
   
-  override func layoutSublayers(of layer: CALayer) {
+  open override func layoutSublayers(of layer: CALayer) {
     super.layoutSublayers(of: layer)
     updateUI()
   }

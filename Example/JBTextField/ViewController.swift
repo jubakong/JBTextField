@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JBTextField
 
 class ViewController: UIViewController {
 
