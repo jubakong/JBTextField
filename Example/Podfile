@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'JBTextField_Example' do
+  pod 'JBTextField', :path => '../'
+
+  target 'JBTextField_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
