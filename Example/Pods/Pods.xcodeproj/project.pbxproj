@@ -67,7 +67,7 @@
 		BF31906AA08077C3D09BFE0A266959BE /* JBTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JBTextField-umbrella.h"; sourceTree = "<group>"; };
 		CE6F3A75FD74954FF58F365D175799B4 /* Pods-JBTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JBTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DBE387E98F20BE260CF34976BEE6E0E3 /* Pods-JBTextField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JBTextField_Example.modulemap"; sourceTree = "<group>"; };
-		F0F355113C6BCCCA617FB403346AC8FD /* JBTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JBTextField.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F0F355113C6BCCCA617FB403346AC8FD /* JBTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JBTextField.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		FAD84620B713ABEB696A7CC5B8AA930B /* Pods-JBTextField_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JBTextField_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FC0A5DABADB78AE66A858A922F3BBCE9 /* JBTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JBTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
