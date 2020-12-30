@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/JBTextField.svg?style=flat)](https://cocoapods.org/pods/JBTextField)
 [![Platform](https://img.shields.io/cocoapods/p/JBTextField.svg?style=flat)](https://cocoapods.org/pods/JBTextField)
 
+## iOS TextField를 사용하면서 불편했던 점을 보완한 TextField 입니다.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
