@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/JBTextField.svg?style=flat)](https://cocoapods.org/pods/JBTextField)
 [![Platform](https://img.shields.io/cocoapods/p/JBTextField.svg?style=flat)](https://cocoapods.org/pods/JBTextField)
 
-TextField which will resolve any inconvenience while using iOS TextField.
+TextField which may resolve any inconvenience while using provided iOS TextField
 
 ## Example
 
