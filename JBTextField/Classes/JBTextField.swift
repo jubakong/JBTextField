@@ -24,14 +24,16 @@ open class JBTextField: UITextField {
     }
   }
   
+  @IBInspectable open var titleLabelText: String? = "TITLE"
+  
   @IBInspectable open var errorMessage: String? {
     didSet {
       initializeErrorLabel()
     }
   }
   
-  var isValid: Bool = false
-  var validation: ((String) -> Bool)?
+  open var isValid: Bool = false
+  open var validation: ((String) -> Bool)?
   var bottomBorder = CALayer()
   
   private let topSetupView = UIView()
@@ -95,13 +97,13 @@ open class JBTextField: UITextField {
         }
       case .fail:
         bottomBorderColor = .red
-      
+        
         UIView.animate(withDuration: 0.3) {
           self.bottomSetupView.alpha = 1
         }
       case .success:
         bottomBorderColor = .blue
-      
+        
         UIView.animate(withDuration: 0.3) {
           self.bottomSetupView.alpha = 0
         }
@@ -117,18 +119,14 @@ open class JBTextField: UITextField {
   }
   
   private func initializeTitleLabel() {
-    if !isValid {
-      
-      titleLabel.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-      titleLabel.font = UIFont.systemFont(ofSize: 13)
-      titleLabel.alpha = 1.0
-      titleLabel.numberOfLines = 0
-      titleLabel.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 10)
-      titleLabel.text = "ABCABC"
-      titleTextHeight = titleLabel.bounds.size.height
-      addSubview(titleLabel)
-      
-    }
+    titleLabel.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+    titleLabel.font = UIFont.systemFont(ofSize: 13)
+    titleLabel.alpha = 1.0
+    titleLabel.numberOfLines = 0
+    titleLabel.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 10)
+    titleLabel.text = titleLabelText
+    titleTextHeight = titleLabel.bounds.size.height
+    addSubview(titleLabel)
   }
   
   private func initializeErrorLabel() {
@@ -153,15 +151,15 @@ open class JBTextField: UITextField {
   
   open override func textRect(forBounds bounds: CGRect) -> CGRect {
     let superRect = super.textRect(forBounds: bounds)
-
+    
     return CGRect(x: 0, y: 0, width: superRect.size.width, height: superRect.size.height + bottomSetupView.frame.height + titleTextHeight )
   }
   
   
   open override func editingRect(forBounds bounds: CGRect) -> CGRect {
     let superRect = super.editingRect(forBounds: bounds)
-
-
+    
+    
     return CGRect(x: 0, y: 0, width: superRect.size.width, height: superRect.size.height + bottomSetupView.frame.height + titleTextHeight )
   }
   

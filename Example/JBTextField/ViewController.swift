@@ -10,10 +10,15 @@ import UIKit
 import JBTextField
 
 class ViewController: UIViewController {
-
+  @IBOutlet weak var testTextField: JBTextField!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+      testTextField.titleLabelText = "TitleText"
+      testTextField.validation = { $0.count == 3 }
+      testTextField.errorMessage = "Error!"
+      
     }
 
     override func didReceiveMemoryWarning() {

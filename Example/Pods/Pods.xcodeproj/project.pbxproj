@@ -11,10 +11,10 @@
 		2D4C0A7408CAEB9F266CD495EDE134F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		32F5DEAA9A6CD76185F3CD093D3CE470 /* Pods-JBTextField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFBDA0AC8D0DAF5F10E247E6593853E9 /* Pods-JBTextField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		351078B6D3E8BC8942C06704785A4AC1 /* Pods-JBTextField_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD4A6155FBCBCB7FD34575F049CAAC92 /* Pods-JBTextField_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A8AD0D7259B127400329F89 /* JBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8AD0D6259B127400329F89 /* JBTextField.swift */; };
 		3C380E84C97316A1BEEF406D986A682A /* Pods-JBTextField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9880C84184199F167D83E6DE17B1F59 /* Pods-JBTextField_Example-dummy.m */; };
 		3F5B3CA927C8677FF5CE831096507BCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		5622E89BF303C2707C9A2EF2A9A48815 /* Pods-JBTextField_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12608159F3FE20E57702F43B8ECD54EE /* Pods-JBTextField_Tests-dummy.m */; };
+		89B5D511259F6B3400069892 /* JBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B5D510259F6B3400069892 /* JBTextField.swift */; };
 		925F6F2A7B827E687315223BCF3F210D /* JBTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF31906AA08077C3D09BFE0A266959BE /* JBTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAE72EC4952D639E78C5F000318B741E /* JBTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A47AC8294C540BA7C2619A1D3CA155F /* JBTextField-dummy.m */; };
 /* End PBXBuildFile section */
@@ -44,7 +44,6 @@
 		12608159F3FE20E57702F43B8ECD54EE /* Pods-JBTextField_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JBTextField_Tests-dummy.m"; sourceTree = "<group>"; };
 		1B2687E71104A7298E35F1EB7BA68DAF /* JBTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JBTextField-Info.plist"; sourceTree = "<group>"; };
 		201EC8B2F2EB59C4826FB835F9AA8BCA /* Pods-JBTextField_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JBTextField_Tests-Info.plist"; sourceTree = "<group>"; };
-		3A8AD0D6259B127400329F89 /* JBTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBTextField.swift; sourceTree = "<group>"; };
 		3CF6303D4AD359ADE35FC6DFADA8523F /* Pods-JBTextField_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JBTextField_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3D0C7E0AA4287BFEBEE30D78C2070D6B /* Pods-JBTextField_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JBTextField_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5892F6DC8D8308DA254FBAA659B151D4 /* JBTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JBTextField.release.xcconfig; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		74B3E2C1360A0E4ADAEA5C6F2A7B0AD6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		882AF8242FC447ACBAA709C67F62E057 /* Pods-JBTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JBTextField_Tests.modulemap"; sourceTree = "<group>"; };
+		89B5D510259F6B3400069892 /* JBTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JBTextField.swift; path = JBTextField/Classes/JBTextField.swift; sourceTree = "<group>"; };
 		8A2F0B52A0F77099DFBD324479D4E61B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8B0A9E49CE47A6116388EA737477708E /* JBTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JBTextField.debug.xcconfig; sourceTree = "<group>"; };
 		96FBBAC263C8A4B56961F3AA62958CD4 /* Pods-JBTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JBTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 		5EDBBA5673C029393E95047F2E579E17 /* JBTextField */ = {
 			isa = PBXGroup;
 			children = (
-				3A8AD0D6259B127400329F89 /* JBTextField.swift */,
+				89B5D510259F6B3400069892 /* JBTextField.swift */,
 				75130C3A844D254E171670DCE405165D /* Pod */,
 				B277F0C08323F0AA67D9EEAD02C27286 /* Support Files */,
 			);
@@ -381,7 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAE72EC4952D639E78C5F000318B741E /* JBTextField-dummy.m in Sources */,
-				3A8AD0D7259B127400329F89 /* JBTextField.swift in Sources */,
+				89B5D511259F6B3400069892 /* JBTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
