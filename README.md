@@ -7,6 +7,8 @@
 
 TextField which may resolve any inconvenience while using provided iOS TextField
 
+![화면-기록-2020-09-06-오후-8 40 04](https://user-images.githubusercontent.com/52398126/103440938-49f7ac00-4c8d-11eb-8648-dd187ebab990.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
