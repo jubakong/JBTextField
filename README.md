@@ -25,9 +25,16 @@ it, simply add the following line to your Podfile:
 pod 'JBTextField'
 ```
 
-## How to use
+## How to Setup
+```
+1. Simply install the pod
+2. Set your subclass as 'JBTextField'
 ```
 
+## How to Use
+- Set Title Text with `titleLabelText`
+```
+testTextField.titleLabelText = "TitleText"
 ```
 
 ## Author
