@@ -33,8 +33,18 @@ pod 'JBTextField'
 
 ## How to Use
 - Set Title Text with `titleLabelText`
-```
+```swift
 testTextField.titleLabelText = "TitleText"
+```
+
+- Set Error Message with `errorMessage`
+```
+testTextField.errorMessage = "Error!"
+```
+
+- Set restriction for showing errormessage with `validation`
+```
+testTextField.validation = { $0.count == 4 }
 ```
 
 ## Author
