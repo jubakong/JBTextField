@@ -12,6 +12,7 @@ TextField which may resolve any inconvenience while using provided iOS TextField
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+iOS 9.0 or higher
 
 ## Installation
 
@@ -20,6 +21,11 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'JBTextField'
+```
+
+## How to use
+```
+
 ```
 
 ## Author
