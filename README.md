@@ -7,7 +7,7 @@
 
 TextField which may resolve any inconvenience while using provided iOS TextField
 
-<img src="https://user-images.githubusercontent.com/52398126/103440991-defaa500-4c8d-11eb-9efe-f7f7161bf474.gif" width="40" height="40" />
+<img src="https://user-images.githubusercontent.com/52398126/103440991-defaa500-4c8d-11eb-9efe-f7f7161bf474.gif" width="300" height="300" />
 
 ## Example
 
