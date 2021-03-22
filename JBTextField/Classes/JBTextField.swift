@@ -124,7 +124,13 @@ open class JBTextField: UITextField {
     titleLabel.alpha = 1.0
     titleLabel.numberOfLines = 0
     titleLabel.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 10)
-    titleLabel.text = titleLabelText
+    
+    if !(text?.isEmpty ?? false) {
+      titleLabel.text = titleLabelText
+    } else {
+      titleLabel.text = ""
+    }
+    
     titleTextHeight = titleLabel.bounds.size.height
     addSubview(titleLabel)
   }

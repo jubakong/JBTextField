@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
       testTextField.titleLabelText = "TitleText"
-      testTextField.validation = { $0.count == 3 }
+      testTextField.validation = { $0.count == 4 }
       testTextField.errorMessage = "Error!"
       
     }
