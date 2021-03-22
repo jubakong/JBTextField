@@ -5,13 +5,16 @@
 [![License](https://img.shields.io/cocoapods/l/JBTextField.svg?style=flat)](https://cocoapods.org/pods/JBTextField)
 [![Platform](https://img.shields.io/cocoapods/p/JBTextField.svg?style=flat)](https://cocoapods.org/pods/JBTextField)
 
-TextField which may resolve any inconvenience while using provided iOS TextField
+TextField which may resolve any inconvenience using default TextField
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/52398126/103441172-6e548800-4c8f-11eb-81b8-67ba89b33150.gif)
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+iOS 9.0 or higher
 
 ## Installation
 
@@ -22,9 +25,31 @@ it, simply add the following line to your Podfile:
 pod 'JBTextField'
 ```
 
+## How to Setup
+```
+1. Simply install the pod
+2. Set your subclass as 'JBTextField'
+```
+
+## How to Use
+- Set Title Text with `titleLabelText`
+```swift
+testTextField.titleLabelText = "TitleText"
+```
+
+- Set Error Message with `errorMessage`
+```
+testTextField.errorMessage = "Error!"
+```
+
+- Set restriction for showing errormessage with `validation`
+```
+testTextField.validation = { $0.count == 4 }
+```
+
 ## Author
 
-jubakong@gmail.com, jubakong@gmail.com
+Jeongbae Kong, jubakong@gmail.com
 
 ## License
 
