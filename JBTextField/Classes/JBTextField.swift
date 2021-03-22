@@ -125,10 +125,17 @@ open class JBTextField: UITextField {
     titleLabel.numberOfLines = 0
     titleLabel.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 10)
     
+    titleLabel.text = titleLabelText
+    titleLabel.alpha = 0
+    
     if !(text?.isEmpty ?? false) {
-      titleLabel.text = titleLabelText
+      UIView.animate(withDuration: 0.3) {
+        self.titleLabel.alpha = 1.0
+      }
     } else {
-      titleLabel.text = ""
+      UIView.animate(withDuration: 0.3) {
+        self.titleLabel.alpha = 0
+      }
     }
     
     titleTextHeight = titleLabel.bounds.size.height
