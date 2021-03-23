@@ -28,7 +28,7 @@ pod 'JBTextField'
 ## How to Setup
 ```
 1. Simply install the pod
-2. Set your subclass as 'JBTextField'
+2. Set subclass of textfield as 'JBTextField'
 ```
 
 ## How to Use
