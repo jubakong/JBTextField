@@ -18,6 +18,9 @@ open class JBTextField: UITextField {
   
   
   // MARK: Properties
+  
+  @IBInspectable open var isTitleOn: Bool = true
+  
   @IBInspectable open var bottomBorderColor: UIColor = .black {
     didSet {
       updateUI()
@@ -125,12 +128,11 @@ open class JBTextField: UITextField {
     titleLabel.numberOfLines = 0
     titleLabel.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 10)
     
-    titleLabel.text = titleLabelText
-    titleLabel.alpha = 0
-    
-    if !(text?.isEmpty ?? false) {
+    if !(text?.isEmpty ?? false),
+       text != "" {
       UIView.animate(withDuration: 0.3) {
         self.titleLabel.alpha = 1.0
+        self.titleLabel.text = self.titleLabelText
       }
     } else {
       UIView.animate(withDuration: 0.3) {
