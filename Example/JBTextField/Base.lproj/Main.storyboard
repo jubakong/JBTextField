@@ -27,7 +27,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isTitleOn" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isTitleOn" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>

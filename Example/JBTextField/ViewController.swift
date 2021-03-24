@@ -14,7 +14,6 @@ class ViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-        
       testTextField.titleLabelText = "TitleText"
       testTextField.validation = { $0.count == 4 }
       testTextField.errorMessage = "Error!"

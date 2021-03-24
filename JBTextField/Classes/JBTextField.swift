@@ -19,7 +19,11 @@ open class JBTextField: UITextField {
   
   // MARK: Properties
   
-  @IBInspectable open var isTitleOn: Bool = true
+  @IBInspectable open var isTitleOn: Bool = true {
+    didSet {
+      updateUI()
+    }
+  }
   
   @IBInspectable open var bottomBorderColor: UIColor = .black {
     didSet {
@@ -139,7 +143,12 @@ open class JBTextField: UITextField {
       }
     }
     
-    titleTextHeight = titleLabel.bounds.size.height
+      titleTextHeight = titleLabel.bounds.size.height
+    
+    if !isTitleOn {
+      titleLabel.text = nil
+    }
+    
     addSubview(titleLabel)
   }
   
