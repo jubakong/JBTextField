@@ -131,7 +131,6 @@ open class JBTextField: UITextField {
     if !(text?.isEmpty ?? false),
        text != "" {
       UIView.animate(withDuration: 0.3) {
-        self.titleLabel.alpha = 1.0
         self.titleLabel.text = self.titleLabelText
       }
     } else {
