@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/JBTextField.svg?style=flat)](https://cocoapods.org/pods/JBTextField)
 [![Platform](https://img.shields.io/cocoapods/p/JBTextField.svg?style=flat)](https://cocoapods.org/pods/JBTextField)
 
-TextField which may resolve any inconvenience using default TextField
+TextField which may resolve any inconvenience using default iOS TextField
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/52398126/103441172-6e548800-4c8f-11eb-81b8-67ba89b33150.gif)
 
@@ -28,7 +28,7 @@ pod 'JBTextField'
 ## How to Setup
 ```
 1. Simply install the pod
-2. Set your subclass as 'JBTextField'
+2. Set subclass of textfield as 'JBTextField'
 ```
 
 ## How to Use
