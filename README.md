@@ -11,7 +11,7 @@ TextField which may resolve any inconvenience using default iOS TextField
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the sample project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
 iOS 9.0 or higher
