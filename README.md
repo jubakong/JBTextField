@@ -47,6 +47,11 @@ testTextField.errorMessage = "Error!"
 testTextField.validation = { $0.count == 4 }
 ```
 
+-Set your preference of showing TextField Title with
+```
+testTextField.isTitleOn = false
+```
+
 ## Author
 
 Jeongbae Kong, jubakong@gmail.com
