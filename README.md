@@ -49,7 +49,7 @@ testTextField.validation = { $0.count == 4 }
 
 -Set your preference of showing TextField Title with
 ```
-testTextField.isTitleOn = false
+testTextField.isTitleOn = Bool (True/False)
 ```
 
 ## Author
