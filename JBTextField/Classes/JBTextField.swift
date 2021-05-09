@@ -16,6 +16,12 @@ open class JBTextField: UITextField {
     case success
   }
   
+  enum ErrorMessagePosition {
+    case left
+    case center
+    case right
+  }
+  
   
   // MARK: Properties
   
@@ -166,6 +172,9 @@ open class JBTextField: UITextField {
       errorLabel.alpha = 1.0
       errorLabel.numberOfLines = 0
       
+      if !errorMessagePosition {
+        
+      }
       errorLabel.frame = CGRect(x: 0, y: self.frame.height + 5, width: self.frame.width, height: 5)
       errorLabel.adjustsFontSizeToFitWidth = true
       errorLabel.sizeToFit()
