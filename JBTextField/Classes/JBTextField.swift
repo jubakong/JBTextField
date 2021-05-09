@@ -7,6 +7,12 @@
 
 import UIKit
 
+public enum ErrorMessagePosition {
+  case left
+  case center
+  case right
+}
+
 @IBDesignable
 open class JBTextField: UITextField {
   
@@ -16,11 +22,7 @@ open class JBTextField: UITextField {
     case success
   }
   
-  enum ErrorMessagePosition {
-    case left
-    case center
-    case right
-  }
+  
   
   
   // MARK: Properties
@@ -45,7 +47,7 @@ open class JBTextField: UITextField {
     }
   }
   
-  @IBInspectable open var errorMessagePosition: String? {
+  open var errorMessagePosition: ErrorMessagePosition = .left {
     didSet {
       initializeErrorLabel()
     }
@@ -106,7 +108,7 @@ open class JBTextField: UITextField {
     initializeErrorLabel()
   }
   
-  private var validationStatus: ValidStatus = .normal {
+  var validationStatus: ValidStatus = .normal {
     didSet {
       switch validationStatus {
       case .normal:
@@ -155,7 +157,7 @@ open class JBTextField: UITextField {
       }
     }
     
-      titleTextHeight = titleLabel.bounds.size.height
+    titleTextHeight = titleLabel.bounds.size.height
     
     if !isTitleOn {
       titleLabel.text = nil
@@ -172,10 +174,22 @@ open class JBTextField: UITextField {
       errorLabel.alpha = 1.0
       errorLabel.numberOfLines = 0
       
-      if !errorMessagePosition {
+      var xPosition: CGFloat?
+      
+      switch errorMessagePosition {
+      case.left:
+        xPosition = 0
         
+      case .right:
+        xPosition = self.frame.size.width / 2
+        
+      case .center:
+        xPosition = self.frame.size.width
       }
-      errorLabel.frame = CGRect(x: 0, y: self.frame.height + 5, width: self.frame.width, height: 5)
+      
+      if let xPosition = xPosition {
+        errorLabel.frame = CGRect(x: xPosition, y: self.frame.height + 5, width: self.frame.width, height: 5)
+      }
       errorLabel.adjustsFontSizeToFitWidth = true
       errorLabel.sizeToFit()
       errorLabel.textColor = .red

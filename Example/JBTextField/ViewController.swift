@@ -18,6 +18,7 @@ class ViewController: UIViewController {
       testTextField.titleLabelText = "TitleText"
       testTextField.validation = { $0.count == 4 }
       testTextField.errorMessage = "Error!"
+      testTextField.errorMessagePosition = .left
       
     }
 
