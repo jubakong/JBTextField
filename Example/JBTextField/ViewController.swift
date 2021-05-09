@@ -15,11 +15,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       testTextField.isTitleOn = false
-      testTextField.titleLabelText = "TitleText"
+      testTextField.titleText = "TitleText"
       testTextField.validation = { $0.count == 4 }
-      testTextField.errorMessage = "Error!"
-      testTextField.errorMessagePosition = .left
-      
+      testTextField.errorMessage = "ErroErroErroErroError!"
+      testTextField.errorMessageAlignment = .right
     }
 
     override func didReceiveMemoryWarning() {
