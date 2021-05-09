@@ -18,7 +18,7 @@ class ViewController: UIViewController {
       testTextField.titleText = "TitleText"
       testTextField.validation = { $0.count == 4 }
       testTextField.errorMessage = "ErroErroErroErroError!"
-      testTextField.errorMessageAlignment = .right
+      testTextField.errorMessageAlignment = .left
     }
 
     override func didReceiveMemoryWarning() {
