@@ -39,6 +39,12 @@ open class JBTextField: UITextField {
     }
   }
   
+  @IBInspectable open var errorMessagePosition: String? {
+    didSet {
+      initializeErrorLabel()
+    }
+  }
+  
   open var isValid: Bool = false
   open var validation: ((String) -> Bool)?
   var bottomBorder = CALayer()
