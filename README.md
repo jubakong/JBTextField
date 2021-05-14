@@ -10,14 +10,12 @@ TextField which may resolve any inconvenience while using default iOS TextField
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/52398126/103441172-6e548800-4c8f-11eb-81b8-67ba89b33150.gif)
 
 ## Example
-
 To run the sample project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
 iOS 9.0 or higher
 
 ## Installation
-
 JBTextField is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
