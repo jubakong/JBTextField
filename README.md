@@ -35,7 +35,7 @@ pod 'JBTextField'
 testTextField.titleLabelText = "TitleText"
 ```
 
-- Set Error Message with `errorMessage`
+- Show Error Message with `errorMessage`
 ```
 testTextField.errorMessage = "Error!"
 ```
