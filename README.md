@@ -16,8 +16,8 @@ To run the sample project, clone the repo, and run `pod install` from the Exampl
 iOS 9.0 or higher
 
 ## Installation
-JBTextField is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+JBTextField is available through [CocoaPods](https://cocoapods.org). 
+To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'JBTextField'
