@@ -14,10 +14,10 @@ class ViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-      testTextField.isTitleOn = false
-      testTextField.titleText = "TitleText"
+      testTextField.isTitleOn = true
+      testTextField.titleText = "Title"
       testTextField.validation = { $0.count == 4 }
-      testTextField.errorMessage = "ErroErroErroErroError!"
+      testTextField.errorMessage = "Error!!"
       testTextField.errorMessageAlignment = .left
     }
 
