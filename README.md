@@ -15,7 +15,6 @@
 
     ```swift
     testTextField.isTitleOn = true
-    }
     ```
 
 - Use `title` if want to declare title
