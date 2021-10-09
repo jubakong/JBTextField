@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JBTextField'
-  s.version          = '1.0.0'
+  s.version          = '1.1.1'
   s.summary          = 'Easiest Way to Save Time for Making a Custom TextField.'
 
   s.homepage         = 'https://github.com/jubakong/JBTextField'
