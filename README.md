@@ -9,11 +9,52 @@
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/52398126/136664221-3631a670-5537-4523-9988-807390ec4f8d.gif)
 
-## Example
-To run the sample project, clone the repo, and run `pod install` from the Example directory first.
+## Tips and Tricks
 
-## Requirements
-iOS 9.0 or higher
+- Use `isTitleOn` if want to show Title
+
+    ```swift
+    testTextField.isTitleOn = true
+    }
+    ```
+
+- Use `title` if want to declare title
+
+   ```swift
+    testTextField.title = "Title"
+    }
+    ```
+
+- Use `validation` if want to check validation
+
+    ```swift
+    testTextField.validation = { $0.count == 4 }
+    ```
+
+- Use `errorMessage` if want to check validation
+
+    ```swift
+    testTextField.errorMessage = "Error!"
+    ```
+    
+- Use `validation` if want to check validation
+
+    ```swift
+    testTextField.validation = { $0.count == 4 }
+    ```
+    
+- Use `errorMessageAlignment` if want to switch alignment of error message
+
+    ```swift
+    testTextField.errorMessageAlignment = .left
+    ```
+    
+- Use `rightImage` if want to set up image at `rightView`
+
+    ```swift
+    testTextField.rightImage = UIImage(named: "flagOfKorea")
+    ```
+
 
 ## Installation
 JBTextField is available through [CocoaPods](https://cocoapods.org). 
@@ -27,27 +68,6 @@ pod 'JBTextField'
 ```
 1. Simply install the pod
 2. Set subclass of textfield as 'JBTextField'
-```
-
-## How to Use
-- Set Title Text with `titleLabelText`
-```swift
-testTextField.titleLabelText = "TitleText"
-```
-
-- Show Error Message with `errorMessage`
-```
-testTextField.errorMessage = "Error!"
-```
-
-- Set restriction for showing errormessage with `validation`
-```
-testTextField.validation = { $0.count == 4 }
-```
-
--Set your preference of showing TextField Title with
-```
-testTextField.isTitleOn = Bool (True/False)
 ```
 
 ## Author
