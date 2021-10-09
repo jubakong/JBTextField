@@ -9,11 +9,6 @@ TextField which may resolve any inconvenience while using default iOS TextField
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/52398126/136664221-3631a670-5537-4523-9988-807390ec4f8d.gif)
 
-
-//![ezgif com-gif-maker](https://user-images.githubusercontent.com/52398126/103441172-6e548800-4c8f-11eb-81b8-67ba89b33150.gif)
-
-
-
 ## Example
 To run the sample project, clone the repo, and run `pod install` from the Example directory first.
 
