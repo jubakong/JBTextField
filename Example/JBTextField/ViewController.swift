@@ -19,6 +19,7 @@ class ViewController: UIViewController {
       testTextField.validation = { $0.count == 4 }
       testTextField.errorMessage = "Error!!"
       testTextField.errorMessageAlignment = .left
+      testTextField.rightImage = UIImage(named: "flagOfKorea")
     }
 
     override func didReceiveMemoryWarning() {

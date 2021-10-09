@@ -103,8 +103,12 @@ import UIKit
     }
   }
   
-  @IBInspectable open var rightImage: UIImage?
-  @IBInspectable open var errorMessageAlignment: NSTextAlignment = .right
+  @IBInspectable open var rightImage: UIImage? {
+    didSet {
+      setrightImage(width: 25, height: 25, rightImage: rightImage)
+    }
+  }
+  @IBInspectable open var errorMessageAlignment: NSTextAlignment = .left
   
   // MARK: Properties
   
@@ -227,7 +231,7 @@ import UIKit
     return titleLabel.font.lineHeight
   }
   
-  func setrightImage(width: CGFloat, height: CGFloat, rightImage: UIImage?) {
+  private func setrightImage(width: CGFloat, height: CGFloat, rightImage: UIImage?) {
     rightImageView = UIImageView(frame:
                                   CGRect(x: 0, y: 0, width: width, height: height)
     )
@@ -244,9 +248,9 @@ import UIKit
     
     rightImageView.contentMode = .scaleAspectFit
     
-    rightContainerView = view
+//    rightContainerView = view
     
-    rightView = rightContainerView
+    rightView = view
     rightViewMode = .always
     
     rightFlagImageWidth = width
@@ -487,10 +491,10 @@ import UIKit
   override open func rightViewRect(forBounds bounds: CGRect) -> CGRect {
     let titleHeight = self.titleHeight()
     let size = bounds.size.height - titleHeight - selectedLineHeight
-    let halfSize = ((bounds.size.height - titleHeight - selectedLineHeight) * 2) / 3
+    let halfSize = ((bounds.size.height - titleHeight - selectedLineHeight) * 2) / 2
     
     return CGRect(
-      x: bounds.width - halfSize,
+      x: bounds.size.width - halfSize,
       y: titleHeight,
       width: size,
       height: size
