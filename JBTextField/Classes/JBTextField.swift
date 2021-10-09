@@ -39,7 +39,7 @@ import UIKit
     }
   }
   
-  @IBInspectable open var titleText: String = "TITLE" {
+  @IBInspectable open var title: String = "TITLE" {
     didSet {
       update()
     }
@@ -398,7 +398,7 @@ import UIKit
       titleLabel.alpha = 0.0
     }
     
-    titleLabel.text = titleText
+    titleLabel.text = title
     titleLabel.textColor = titleColor
     titleLabel.font = titleFont
     
