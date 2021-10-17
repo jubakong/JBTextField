@@ -21,7 +21,6 @@
 
    ```swift
     testTextField.title = "Title"
-    }
     ```
 
 - Use `validation` if want to check validation
